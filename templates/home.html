@@ -10,14 +10,22 @@
   <title>Home</title>
   
   <style>
-   
+   #banner{
+     height: 360px;
+     width: 100%;
+     object-fit:cover;
+     margin-bottom:16px;
+     
+   }
     
   </style>
 </head>
 <body>
+  {% include 'nav.html' %}
+   <img class="img-fluid" id="banner" src="/static/banner.jpg">
   <div class="container">
     <h1 class="text-center mt-4 mb-4">Welcome to our Career Portal</h1>
-    <img class="img-fluid" id="banner" src="/static/banner.jpg">
+   
     <h2 class="text-center mt-2 mb-4">About Us</h2>
         <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
     molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
@@ -38,9 +46,10 @@ qui</p>
       </div>
    
     <div class="text-center">
-      <button>Contact Us</button>
-      <p>Copyright 2023</p>
+     <button type="button" class="btn btn-outline-secondary mt-4">Contact Us</button>
+      <p class="mt-4 mb-2">Copyright 2023</p>
     </div>
   </div>
+  {% include 'footer.html'%}
 </body>
 </html>
