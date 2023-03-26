@@ -24,18 +24,23 @@
   {% include 'nav.html' %}
    <img class="img-fluid" id="banner" src="/static/banner.jpg">
   <div class="container">
-    <h1 class="text-center mt-4 mb-4">Welcome to our Career Portal</h1>
+    <h1 class="text-center mt-4 mb-5">Welcome to our Career Portal</h1>
    
-    <h2 class="text-center mt-2 mb-4">About Us</h2>
-        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+    <h2 class="text-center mt-4 mb-4">About Us</h2>
+        <div class="row" style="margin-bottom:16px;">
+          <div class="col-md-6">
+    <p class="lead mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
     molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
     numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
     optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
     obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
     nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
     tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-qui</p>
-    <h2 class="text-center mt-2 mb-4 ">Open Positions</h2>
+qui</p></div>
+          <div class="d-none d-md-block col-6">
+          <img src="/static/work.jpg" style="height:320px;border-radius:5px;"></div>
+        </div>
+    <h2 class="text-center mt-5 mb-5 ">Open Positions</h2>
     
     <div class="container" style="color:">
       {% for job in jobs %}
@@ -46,7 +51,7 @@ qui</p>
       </div>
    
     <div class="text-center">
-     <button type="button" class="btn btn-outline-secondary mt-4">Contact Us</button>
+     <a href="mailto:hello@careerforyou.ai?subject=Question%20About%20Job%20Openings&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0AMy%20question%3A%20%3Cyour%20question%20here%3E" type="button" class="btn btn-outline-secondary mt-4">Contact Us</a>
       <p class="mt-4 mb-2">Copyright 2023</p>
     </div>
   </div>
